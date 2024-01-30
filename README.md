@@ -1,1 +1,1 @@
-Dwitter project
+Dwitter project Sequelize
