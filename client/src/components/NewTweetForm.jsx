@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const NewTweetForm = ({ tweetService, onError, onCreated }) => {
+const NewTweetForm = ({ tweetService, onError }) => {
   const [tweet, setTweet] = useState('');
 
   const onSubmit = async (event) => {
