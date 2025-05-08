@@ -1,5 +1,4 @@
 import { db } from '../db/database.js';
-import * as userRepository from './auth.js';
 
 const SELECT_JOIN =
   'SELECT tw.id, tw.text, tw.createdAt, tw.userId, us.username, us.name, us.url FROM tweets as tw JOIN users as us ON tw.userId=us.id';
