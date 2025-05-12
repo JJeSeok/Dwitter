@@ -47,7 +47,7 @@ export async function create(text, userId) {
 
   return getTweets()
     .insertOne(tweet)
-    .then((data) => mapOptionalTweet({ ...tweet, id: data.insertedId }));
+    .then((data) => mapOptionalTweet({ ...tweet, _id: data.insertedId }));
 }
 
 export async function update(tweetId, text) {
